@@ -4,6 +4,8 @@
 
 　Chromiumのプロファイルを選択するGUIダイアログを出して起動させるBashスクリプト。
 
+![eye-catch](https://github.com/ytyaru/Shell.Chromium.Profile.Chooser.20250807093501/blob/master/eye-catch.png?raw=true)
+
 # 特徴
 
 * `firefox -P`のChromium版。標準では備わっていないため自作した

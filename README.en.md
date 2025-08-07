@@ -4,11 +4,7 @@
 
 A Bash script that launches a GUI dialog that selects a Chromium profile and launches it.
 
-# DEMO
-
-* [DEMO](https://ytyaru.github.io/Shell.Chromium.Profile.Chooser.20250807093501/)
-
-# Features
+![eye-catch](https://github.com/ytyaru/Shell.Chromium.Profile.Chooser.20250807093501/blob/master/eye-catch.png?raw=true)
 
 * Chromium version of `firefox -P`. I made it myself because it is not included as standard.
 

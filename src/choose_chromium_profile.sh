@@ -20,10 +20,10 @@ Run() {
 
 	readonly PROFILE_NAME_DIR=$(paste -d'\n' <(echo -e "$PROFILE_NAMES") <(echo -e "$PROFILE_DIRS"))
 	readonly PROFILES="$(echo -e "$PROFILE_NAME_DIR" | sed "s/^/'/g" | sed "s/$/'/g" | tr '\n' ' ')"
-	readonly WIDTH=280
+	readonly WIDTH=340
 	readonly HEIGHT=$((100 + (25 * $(echo -e "$PROFILE_DIRS" | wc -l))))
 	echo $HEIGHT
-	ZENITY_CMD="zenity --list --hide-header --title='Chromium ユーザ選択' --text='ユーザを選択してください。' --hide-column=2 --print-column=2 --column='ユーザ名' --column='ディレクトリ名' --width=$WIDTH --height=$HEIGHT $PROFILES"
+	ZENITY_CMD="zenity --list --hide-header --title='Chromiumプロファイル選択' --text='プロファイルを選択してください。' --hide-column=2 --print-column=2 --column='プロファイル名' --column='ディレクトリ名' --width=$WIDTH --height=$HEIGHT $PROFILES"
 	SELECTED_PROFILE_DIR="$(eval "$ZENITY_CMD")"
 	chromium-browser --profile-directory="$SELECTED_PROFILE_DIR"
 }
